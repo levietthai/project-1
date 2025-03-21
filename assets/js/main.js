@@ -23,9 +23,17 @@ const backToTopButton = document.getElementById('back-to-top');
 // Hiển thị hoặc ẩn nút 'Back to Top' khi cuộn trang
 window.addEventListener('scroll', () => {
     if (window.scrollY > 500) {
+        backToTopButton.style.animation = 'fadeIn ease 1s';
         backToTopButton.style.display = 'block';
     } else {
-        backToTopButton.style.display = 'none';
+        backToTopButton.style.animation = 'fadeOut ease 1s';
+
+        // Ẩn nút 'Back to Top' sau khi hoàn thành animation
+        backToTopButton.addEventListener("animationend", () => {
+            if (window.scrollY <= 500) {
+                backToTopButton.style.display = "none";
+            }
+        }, { once: true })
     }
 });
 // Cuộn lên đầu trang khi click vào nút 'Back to Top'
@@ -34,4 +42,20 @@ backToTopButton.addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
+});
+
+
+// add scroll 
+window.addEventListener('scroll', () => {
+    const navBar = document.querySelector('.nav-bar');
+
+    navBar.style.position = 'static';
+
+    if (window.scrollY > 200 ) {
+        navBar.classList.add('scrolled');
+        navBar.style.position = 'fixed';
+        navBar.style.animation = 'fadeIn ease 1s';
+    } else {
+        navBar.classList.remove('scrolled');
+    }
 });

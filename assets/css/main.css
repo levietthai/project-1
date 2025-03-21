@@ -20,6 +20,7 @@ body {
     align-items: center;
     padding: 20px;
     background: rgba(10, 67, 127, 1);
+
 }
 
 .header-logo img {
@@ -55,16 +56,6 @@ body {
     color: #fff;
     cursor: pointer;
     font-size: 1.6rem;
-}
-
-.search-btn::before {
-    content: "";
-    border-left: 2px solid #b7b7b9;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    border-radius: 2px;
 }
 
 .search-btn:hover i {
@@ -135,6 +126,10 @@ body {
     font-size: 2.4rem;
 }
 
+.icon-hv:hover {
+    opacity: 0.8;
+}
+
 /* cart  */
 
 .shop-cart {
@@ -156,6 +151,17 @@ body {
     justify-content: center;
     min-width: 20px; 
 }
+
+ /* Main Body */
+ .main-body {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+ }
+ 
+ .main-body-item {
+    margin-bottom: 20px;
+ }
 
 /* footer  */
 
@@ -226,7 +232,44 @@ body {
     align-items: center;
     background-color: #0a437f;
     padding: 10px 20px;
+    /* position: static; */
+    z-index: 999;
+    top: 125px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* animation: fadeOut 0.5s ease; */
  }
+
+ @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    } 
+}
+
+ .nav-bar.scrolled {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* animation: fadeIn 1s ease; */
+    top: 0;
+}
  
  .brand-bar {
     display: flex;
@@ -242,6 +285,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s ease;
  }
  .brand-item a:hover {
     text-decoration: underline;
@@ -259,23 +303,14 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: color 0.3s ease;
  }
  
  .nav-icons a:hover {
     opacity: 0.8;
  }
  
- /* Main Body */
- .main-body {
-    padding: 20px;
-    background-color: #fff;
-    margin-bottom: 20px;
- }
- 
- .main-body-item {
-    margin-bottom: 20px;
- }
- 
+    /* Header Item */
  .header-item {
     display: flex;
     justify-content: space-between;
@@ -470,6 +505,7 @@ body {
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease;
+    /* animation: fadeIn 1s ease; */
 }
 
 .back-to-top:hover {
