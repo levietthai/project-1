@@ -28,7 +28,7 @@
                </a>
             </div>
          </div>
-         
+
          <!-- header-search -->
          <div class="header-search">
             <div class="search">
@@ -63,6 +63,7 @@
             <div class="shop-cart">
                <a href="#!">
                   <i class="fa-solid fa-cart-shopping icon-cart"></i>
+                  <span id="cart-item-nb" class="cart-item-nb">0</span>
                </a>
             </div>
          </div>
@@ -120,74 +121,158 @@
          <!-- Product Bar -->
          <div class="info-bar">
             <div class="info-item">
-                <i class="fa-solid fa-star"></i>
-                <p>Hàng chính hãng 100%</p>
+               <i class="fa-solid fa-star"></i>
+               <p>Hàng chính hãng 100%</p>
             </div>
             <div class="info-item">
-                <!-- <i class="fa-solid fa-truck"></i> -->
-                <i class="fa-solid fa-money-bill"></i>
-                <p>Tích điểm thành viên - Ưu đãi độc quyền cho khách hàng thân thiết</p>
+               <!-- <i class="fa-solid fa-truck"></i> -->
+               <i class="fa-solid fa-money-bill"></i>
+               <p>
+                  Tích điểm thành viên - Ưu đãi độc quyền cho khách hàng thân
+                  thiết
+               </p>
             </div>
             <div class="info-item">
-                <i class="fa-solid fa-exchange-alt"></i>
-                <p>Đổi hàng 30 ngày, bảo hành 12 tháng</p>
+               <i class="fa-solid fa-exchange-alt"></i>
+               <p>Đổi hàng 30 ngày, bảo hành 12 tháng</p>
             </div>
-        </div>
+         </div>
 
-        <!-- New Product Section -->
-<div class="new-product-section">
-   <h2 class="section-title">Sản phẩm mới</h2>
-   <div class="product-grid">
-       <div class="product-item">
-           <img src="./assets/images/product-item-1.jpg" alt="Product 1">
-           <h3 class="product-title">Product 1</h3>
-           <p class="product-price">$100</p>
-       </div>
-       <div class="product-item">
-           <img src="./assets/images/product-item-1.jpg" alt="Product 2">
-           <h3 class="product-title">Product 2</h3>
-           <p class="product-price">$120</p>
-       </div>
-       <div class="product-item">
-           <img src="./assets/images/product-item-1.jpg" alt="Product 3">
-           <h3 class="product-title">Product 3</h3>
-           <p class="product-price">$150</p>
-       </div>
-       <div class="product-item">
-           <img src="./assets/images/product-item-1.jpg" alt="Product 4">
-           <h3 class="product-title">Product 4</h3>
-           <p class="product-price">$200</p>
-       </div>
-       <div class="product-item">
-         <img src="./assets/images/product-item-1.jpg" alt="Product 4">
-         <h3 class="product-title">Product 4</h3>
-         <p class="product-price">$200</p>
-     </div>
-   </div>
-</div>
+         <!-- New Product Section -->
+         <div class="product-section">
+            <h2 class="section-title">Sản phẩm mới</h2>
+            <div class="product-grid">
+               <div class="product-item">
+                  <img
+                     src="./assets/images/product-item-1.jpg"
+                     alt="Product 1"
+                  />
+                  <h3 class="product-title">Product 1</h3>
+                  <p class="product-price">$100</p>
+               </div>
+               <div class="product-item">
+                  <img
+                     src="./assets/images/product-item-1.jpg"
+                     alt="Product 2"
+                  />
+                  <h3 class="product-title">Product 2</h3>
+                  <p class="product-price">$120</p>
+               </div>
+               <div class="product-item">
+                  <img
+                     src="./assets/images/product-item-1.jpg"
+                     alt="Product 3"
+                  />
+                  <h3 class="product-title">Product 3</h3>
+                  <p class="product-price">$150</p>
+               </div>
+               <div class="product-item">
+                  <img
+                     src="./assets/images/product-item-1.jpg"
+                     alt="Product 4"
+                  />
+                  <h3 class="product-title">Product 4</h3>
+                  <p class="product-price">$200</p>
+               </div>
+               <div class="product-item">
+                  <img
+                     src="./assets/images/product-item-1.jpg"
+                     alt="Product 4"
+                  />
+                  <h3 class="product-title">Product 4</h3>
+                  <p class="product-price">$200</p>
+               </div>
+            </div>
+         </div>
 
+         <!-- Best Seller Section -->
+         <div class="product-section">
+            <h2 class="section-title">Bán chạy</h2>
+            <div class="product-grid">
+               <div class="product-item">
+                  <img
+                     src="./assets/images/product-item-1.jpg"
+                     alt="Best Seller 1"
+                  />
+                  <h3 class="product-title">Best Seller 1</h3>
+                  <p class="product-price">$150</p>
+               </div>
+               <div class="product-item">
+                  <img
+                     src="./assets/images/product-item-1.jpg"
+                     alt="Best Seller 2"
+                  />
+                  <h3 class="product-title">Best Seller 2</h3>
+                  <p class="product-price">$180</p>
+               </div>
+               <div class="product-item">
+                  <img
+                     src="./assets/images/product-item-1.jpg"
+                     alt="Best Seller 3"
+                  />
+                  <h3 class="product-title">Best Seller 3</h3>
+                  <p class="product-price">$200</p>
+               </div>
+               <div class="product-item">
+                  <img
+                     src="./assets/images/product-item-1.jpg"
+                     alt="Best Seller 4"
+                  />
+                  <h3 class="product-title">Best Seller 4</h3>
+                  <p class="product-price">$220</p>
+               </div>
+               <div class="product-item">
+                  <img
+                     src="./assets/images/product-item-1.jpg"
+                     alt="Best Seller 4"
+                  />
+                  <h3 class="product-title">Best Seller 4</h3>
+                  <p class="product-price">$220</p>
+               </div>
+            </div>
+         </div>
       </main>
 
       <!-- footer  -->
       <footer class="footer">
          <div class="footer-container">
             <div class="footer-section">
-               <h3>About Us</h3>
-               <p>Information about the company.</p>
+               <h3>Về chúng tôi</h3>
+               <ul>
+                  <li><a href="#!">Giới thiệu</a></li>
+                  <li><a href="#!">Điều khoản sử dụng</a></li>
+                  <li><a href="#!">Chính sách bảo mật</a></li>
+                  <li><a href="#!">Tin tức Myshoes</a></li>
+                  <li><a href="#!">Cơ hội việc làm</a></li>
+                  <li><a href="#!">Liên hệ</a></li>
+               </ul>
             </div>
             <div class="footer-section">
-               <h3>Contact</h3>
-               <p>Email: contact@shoeonline.com</p>
-               <p>Phone: +123 456 789</p>
+               <h3>Khách hàng</h3>
+               <ul>
+                  <li><a href="#!">Hướng dẫn mua hàng</a></li>
+                  <li><a href="#!">Chính sách đổi trả</a></li>
+                  <li><a href="#!">Chính sách bảo hành</a></li>
+                  <li><a href="#!">Khách hàng thân thiết</a></li>
+                  <li><a href="#!">Hướng dẫn chọn size</a></li>
+                  <li><a href="#!">Chương trình khuyến mại</a></li>
+               </ul>
             </div>
             <div class="footer-section">
-               <h3>Follow Us</h3>
+               <h3>Theo dõi chúng tôi</h3>
                <a href="#"><i class="fa-brands fa-facebook"></i></a>
                <a href="#"><i class="fa-brands fa-twitter"></i></a>
                <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
          </div>
       </footer>
+
+      <!-- Back to Top Button -->
+      <button id="back-to-top" class="back-to-top">
+         <i class="fa-solid fa-arrow-up icon-btt"></i>
+      </button>
+
+      <!-- script -->
       <script src="./assets/js/main.js"></script>
    </body>
 </html>
